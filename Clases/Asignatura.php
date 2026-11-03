@@ -37,7 +37,23 @@ Class Asignatura {
     public function __toString() {
         return "{$this -> id}, {$this -> nombre}, {$this -> creditos}.";   
     }
+// Get $id
 
+    public function getId(): int {
+        return $this -> id;
+    }
+
+// Método de busqueda estático
+
+    public static function buscarAsignaturaPorId(int $id): ?Asignatura {
+        $asignaturas = self::crearAsignaturasDeMuestra();
+        foreach ($asignaturas as $asignatura) {
+        if ($asignatura -> getId() == $id) {
+            return $asignatura;
+        }
+    }
+    return null;
+}
 
 
 }
