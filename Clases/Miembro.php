@@ -5,8 +5,8 @@ class Miembro { //Esta clase va a ser abstracta para que herede de ella tanto, p
 
     //Atributos
     private int $id;
-    private string $name;
-    private string $surname;
+    private string $nombre;
+    private string $apellidos;
     private string $email;
 
     //-------    Métodos ------
@@ -14,8 +14,8 @@ class Miembro { //Esta clase va a ser abstracta para que herede de ella tanto, p
     //Constructor
     function __construct($id, $name, $surname, $email) {
         $this -> id = $id;
-        $this -> name = $name;
-        $this -> surname = $surname;
+        $this -> nombre = $name;
+        $this -> apellidos = $surname;
         $this -> email = $email;
 
     }
@@ -24,12 +24,12 @@ class Miembro { //Esta clase va a ser abstracta para que herede de ella tanto, p
     public function getId(): int {
         return $this -> id;
     }
-    public function getName(): string {
-        return $this -> name;
+    public function getNombre(): string {
+        return $this -> nombre;
     }
 
-    public function getSurname(): string {
-        return $this -> surname;
+    public function getApellidos(): string {
+        return $this -> apellidos;
     }
     
     public function getEmail(): string {
@@ -42,12 +42,12 @@ class Miembro { //Esta clase va a ser abstracta para que herede de ella tanto, p
         $this -> id = $id;
     }
 
-    public function setName (string $name): void {
-        $this -> name = $name;
+    public function setNombre (string $name): void {
+        $this -> nombre = $name;
     }
 
-    public function setSurname (string $surname): void {
-        $this -> surname = $surname;
+    public function setApellidos (string $surname): void {
+        $this -> apellidos = $surname;
     }
 
     public function setEmail (string $email): void {
@@ -58,6 +58,6 @@ class Miembro { //Esta clase va a ser abstracta para que herede de ella tanto, p
 
     public function __toString()
     {
-        return "Nombre: {$this->name}, Email: {$this->email}";
+        return "Nombre: {$this->nombre}, Email: {$this->email}";
     }
 }
