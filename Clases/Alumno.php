@@ -10,6 +10,8 @@ class Alumno extends Miembro {
 
     //-------    Métodos ------
 
+
+    // Constructor
     function __construct ($id, $name, $surname, $email, $edad, array $asignaturas = []) {
         parent::__construct($id, $name, $surname, $email);
         $this -> edad = $edad;
@@ -18,6 +20,10 @@ class Alumno extends Miembro {
 
     }
 
+    // Getter 
+    public function getEdad():int {
+        return $this -> edad;
+    }
     // Método Abonar Curso
     public function abonarCurso($cursoAbonado) {
         $this -> cursoAbonado = $cursoAbonado;
@@ -48,7 +54,9 @@ class Alumno extends Miembro {
                                     new Alumno(5, "Alba", "Fernández", "alba.fernandez@email.com", 21),
                                     new Alumno(6, "David", "Rodríguez", "david.rodriguez@email.com", 26),
                                     new Alumno(7, "Lucia", "Jiménez", "lucia.jimenez@email.com", 20),
-                                    new Alumno(8, "Jorge", "Pérez", "jorge.perez@email.com", 22),];
+                                    new Alumno(8, "Jorge", "Pérez", "jorge.perez@email.com", 22),
+                                    new Alumno(9, "Elena", "Romero", "elena.romero@email.com", 23),
+                                    new Alumno(10, "Pablo", "Torres", "pablo.torres@email.com", 24),];
 
         return $listaAlumnosdeMuestra;      
 
