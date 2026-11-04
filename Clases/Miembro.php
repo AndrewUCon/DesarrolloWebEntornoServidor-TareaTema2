@@ -58,6 +58,6 @@ class Miembro { //Esta clase va a ser abstracta para que herede de ella tanto, p
 
     public function __toString()
     {
-        return "Nombre: {$this->nombre}, Email: {$this->email}";
+        return "Nombre: {$this->nombre}  {$this -> apellidos}, Email: {$this->email}";
     }
 }
