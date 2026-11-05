@@ -20,9 +20,13 @@ class Alumno extends Miembro {
 
     }
 
-    // Getter 
+    // Getters
     public function getEdad():int {
         return $this -> edad;
+    }
+
+    public function getAsignaturas():array {
+        return $this -> asignaturas;
     }
     // Método Abonar Curso
     public function abonarCurso($cursoAbonado) {
@@ -30,7 +34,7 @@ class Alumno extends Miembro {
     }
 
     // Método Matricularse en una asignatura 
-    public function matricularseEnAsignatura (Asignatura $asignatura) {
+    public function matricularEnAsignatura (Asignatura $asignatura) {
 
     if (in_array($asignatura, $this -> asignaturas)) {
         return  "Ya estás matriculado en esta asignatura";
