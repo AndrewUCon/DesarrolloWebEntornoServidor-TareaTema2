@@ -9,6 +9,7 @@
 
 <a href="index.php">Index</a>
 <a href="triangle.php">Triangulo</a>
+<a href="biblioteca.php">Biblioteca</a>
     
     <h2>Alumnos</h2>
 
