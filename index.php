@@ -6,6 +6,9 @@
     <title>Tarea Tema 2 Desarrollo Web Entorno Servidor</title>
 </head>
 <body>
+
+<a href="index.php">Index</a>
+<a href="triangle.php">Triangulo</a>
     
     <h2>Alumnos</h2>
 
